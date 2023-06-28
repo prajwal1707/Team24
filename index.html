@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Tracking Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Resource Tracking Dashboard</h1>
+        
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="summary">
+                    <p>Total Account: <span id="account-count">0</span></p>
+                    <p>Total Region: <span id="account-count">0</span></p>
+                    <p>Total Services: <span id="account-count">0</span></p>
+                </div>
+            </div>
+                    
+        </div>
+
+        <div class="filters">
+            <h4>Filters:</h4>
+            <div class="form-group">
+                <label for="account-filter">Account</label>
+                <select id="account-filter" class="form-control" onchange="filterResourse()">
+                    <option value="">All</option>
+                    <option value="Account 1">Account 1</option>
+                    <option value="Account 2">Account 2</option>
+                    <option value="Account 3">Account 3</option>
+                </select>
+                </div>   
+                <div class="form-group">
+                    <label for="region-filter">Region</label>
+                    <select id="region-filter" class="form-control" onchange="filterResourse()">
+                        <option value="">All</option>
+                        <option value="region 1">Region 1</option>
+                        <option value="region 2">Region 2</option>
+                        <option value="region 3">Region 3</option>
+                    </select>
+                    </div>    
+                           
+        
+        <ul id="resource-list" class="list-group"></ul>
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" onclick="search()">Search Services</button>
+
+        </div>    
+    
+
+    </div>
+
+    
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

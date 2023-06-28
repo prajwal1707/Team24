@@ -1,0 +1,51 @@
+body {
+    background-color: #d1deeb;
+    padding-top: 20px;
+}
+
+.sidebar {
+    background-color:#343a40;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+
+}
+.sidebar h1 {
+    font-size:24px;
+    margin-bottom: 30px;
+}
+
+.sidebar .nav-link {
+
+    color:#fff;
+    font-size: 16px;
+
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.summary {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color:#fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
